@@ -11,8 +11,8 @@ export const site = {
   timezone: 'UTC+2',
 
   headline: {
-    before: 'Frontend that ',
-    accent: 'survives contact with real users',
+    before: 'Software developer specializing in ',
+    accent: 'frontend',
     after: '.',
   },
 

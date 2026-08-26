@@ -4,9 +4,8 @@ import { useEffect, useState } from 'react';
 import { site } from '@/content/site';
 
 /**
- * В статическом HTML остаётся только подпись "Email" — сам адрес
- * собирается уже в браузере, после монтирования. Спам-парсеры,
- * читающие голый HTML, ничего не находят.
+ * Подпись видна сразу, адрес подставляется в href уже в браузере —
+ * в статическом HTML его нет.
  */
 export function EmailLink({ className, children }: { className?: string; children: React.ReactNode }) {
   const [href, setHref] = useState<string | undefined>(undefined);
@@ -16,7 +15,7 @@ export function EmailLink({ className, children }: { className?: string; childre
   }, []);
 
   return (
-    <a className={className} href={href ?? '#'} rel="nofollow">
+    <a className={className} href={href} rel="nofollow">
       {children}
     </a>
   );

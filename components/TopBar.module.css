@@ -1,10 +1,18 @@
 .bar {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px 22px;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px 24px;
   padding: 20px 0 0;
   font-size: 12px;
   letter-spacing: 0.02em;
+}
+
+.left {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 22px;
 }
 
 .link {
