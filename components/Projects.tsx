@@ -8,7 +8,7 @@ export function Projects() {
   return (
     <section className={styles.section}>
       <SectionHead
-        num="02"
+        num="01"
         title="Things I built on my own time"
         aside={filled ? `${filled} live` : `${projects.length} slots`}
       />

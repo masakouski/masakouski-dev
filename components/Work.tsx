@@ -5,7 +5,7 @@ import styles from './Work.module.css';
 export function Work() {
   return (
     <section className={styles.section} aria-labelledby="work">
-      <SectionHead num="01" title="Selected work" aside={`${work.length} engagements`} />
+      <SectionHead num="02" title="Selected work" aside={`${work.length} engagements`} />
 
       {work.map((job) => (
         <article className={styles.row} key={job.id}>

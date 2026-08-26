@@ -12,8 +12,8 @@ export default function HomePage() {
       <TopBar />
       <main id="main">
         <Hero />
-        <Work />
         <Projects />
+        <Work />
         <Toolbox />
       </main>
       <SiteFooter />

@@ -16,7 +16,7 @@ export function SiteFooter() {
       <a className={styles.link} href={site.links.cv}>
         CV
       </a>
-      <span className={styles.end}>Warsaw · {new Date().getFullYear()}</span>
+      <span className={styles.end}>Warsaw</span>
     </footer>
   );
 }

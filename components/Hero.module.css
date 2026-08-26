@@ -1,19 +1,25 @@
 .hero {
-  padding: 56px 0 44px;
-  border-bottom: 1px solid var(--line);
+  padding: 40px 0 8px;
 }
 
-.headline {
-  font-size: clamp(28px, 5vw, 52px);
+.name {
+  font-size: clamp(26px, 4vw, 40px);
   font-weight: 700;
-  line-height: 1.06;
-  letter-spacing: -0.03em;
-  text-wrap: balance;
-  max-width: 20ch;
-  margin: 0 0 22px;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  margin: 0 0 14px;
 }
 
-.headline em {
+.tagline {
+  font-size: clamp(17px, 2.2vw, 22px);
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+  max-width: 26ch;
+  margin: 0 0 24px;
+}
+
+.tagline em {
   font-style: normal;
   color: var(--accent);
 }
@@ -22,75 +28,19 @@
   max-width: 62ch;
   font-size: 15px;
   color: var(--mute);
-  margin: 0 0 30px;
-}
-
-.actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
-  padding-bottom: 34px;
-}
-
-.btn {
-  text-decoration: none;
-  font-size: 12.5px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  padding: 11px 18px;
-  border: 1px solid var(--ink);
-  color: var(--ink);
-  background: var(--card);
-  transition: background 0.15s, color 0.15s, border-color 0.15s;
-}
-
-.btn:hover {
-  background: var(--ink);
-  color: var(--paper);
-}
-
-.btnFill {
-  background: var(--ink);
-  color: var(--paper);
-}
-
-.btnFill:hover {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--on-accent);
-}
-
-.sep {
-  width: 1px;
-  align-self: stretch;
-  background: var(--line);
-  margin: 0 4px;
-}
-
-.plain {
-  font-size: 12.5px;
-  color: var(--mute);
-  text-decoration: none;
-  border-bottom: 1px solid var(--line);
-}
-
-.plain:hover {
-  color: var(--accent);
-  border-color: var(--accent);
+  margin: 0 0 34px;
 }
 
 .specs {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
   border-top: 1px solid var(--line-soft);
+  border-bottom: 1px solid var(--line-soft);
   margin: 0;
 }
 
 .spec {
   padding: 14px 20px 14px 0;
-  border-bottom: 1px solid var(--line-soft);
 }
 
 .spec dt {
@@ -115,10 +65,4 @@
   background: var(--accent);
   margin-right: 7px;
   vertical-align: middle;
-}
-
-@media (max-width: 680px) {
-  .sep {
-    display: none;
-  }
 }
