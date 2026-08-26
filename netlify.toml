@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Плагин @netlify/plugin-nextjs здесь намеренно не подключён:
+# при output:'export' сборка уже статическая, и плагин не нужен.

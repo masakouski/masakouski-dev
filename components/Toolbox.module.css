@@ -1,0 +1,25 @@
+.section {
+  padding: 52px 0 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 24px;
+  padding: 26px 0;
+}
+
+.groupName {
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mute);
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+
+.items {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.75;
+}

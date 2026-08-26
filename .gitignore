@@ -1,1 +1,13 @@
 .DS_Store
+
+# зависимости
+/node_modules
+
+# сборка next
+/.next
+/out
+next-env.d.ts
+*.tsbuildinfo
+
+# окружение
+.env*.local

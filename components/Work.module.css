@@ -1,0 +1,87 @@
+.section {
+  padding: 52px 0 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 8px 28px;
+  padding: 26px 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.meta {
+  font-size: 11.5px;
+  color: var(--mute);
+  line-height: 1.7;
+}
+
+.meta strong {
+  display: block;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 4px;
+}
+
+.metricWrap {
+  margin-top: 16px;
+}
+
+.metric {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 2px;
+}
+
+.body p {
+  margin: 0 0 12px;
+  max-width: var(--measure);
+}
+
+.points {
+  margin: 0 0 14px;
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.points li {
+  position: relative;
+  padding-left: 20px;
+  max-width: var(--measure);
+}
+
+.points li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  font-size: 11px;
+  padding: 3px 8px;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  color: var(--mute);
+  background: var(--card);
+}
+
+@media (max-width: 680px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
