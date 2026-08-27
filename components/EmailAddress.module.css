@@ -1,0 +1,48 @@
+.wrap {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.address {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  min-width: 28ch;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.address:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.copy {
+  font: inherit;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--mute);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 2px 7px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.copy:hover:not(:disabled) {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.copy:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+@media (max-width: 560px) {
+  .address {
+    min-width: 0;
+  }
+}

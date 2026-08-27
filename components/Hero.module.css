@@ -1,0 +1,68 @@
+.hero {
+  padding: 40px 0 8px;
+}
+
+.name {
+  font-size: clamp(26px, 4vw, 40px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  margin: 0 0 14px;
+}
+
+.tagline {
+  font-size: clamp(17px, 2.2vw, 22px);
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+  max-width: 26ch;
+  margin: 0 0 24px;
+}
+
+.tagline em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+.lede {
+  max-width: 62ch;
+  font-size: 15px;
+  color: var(--mute);
+  margin: 0 0 34px;
+}
+
+.specs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  border-top: 1px solid var(--line-soft);
+  border-bottom: 1px solid var(--line-soft);
+  margin: 0;
+}
+
+.spec {
+  padding: 14px 20px 14px 0;
+}
+
+.spec dt {
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mute);
+  margin-bottom: 5px;
+}
+
+.spec dd {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-right: 7px;
+  vertical-align: middle;
+}
